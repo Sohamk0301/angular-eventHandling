@@ -19,6 +19,6 @@ export class AppComponent  {
   }
 
   blurEvent(){
-    alert("Blue event is executed");
+    alert("Blur event is executed");
   }
 }
