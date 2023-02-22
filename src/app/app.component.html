@@ -8,3 +8,12 @@
 <input type="text" (blur)="blurEvent()" value="Blur Event" />
 <br />
 
+<button (click)="eventHandle('This event is handled using $event')">
+  Event is handled by dollor event</button
+><br />
+
+<button (click)="eventHandle(50)">Event is handled by dollor event</button
+><br />
+
+<button (click)="eventHandle($event)">Event is handled by dollor event</button
+><br />
