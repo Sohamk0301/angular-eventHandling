@@ -17,3 +17,22 @@
 
 <button (click)="eventHandle($event)">Event is handled by dollor event</button
 ><br />
+
+<h3>Template reference variable eg-1 the text from the input is displayed</h3>
+<input #inputtext (input)="inputevent1(inputtext)" />
+<p>The entered value is {{ value1 }}</p>
+<h3>
+  Template reference variable eg2 the text from the input is displayed in the
+  console when the button is clicked
+</h3>
+<input #refvar type="text" />
+<button (click)="displayconsole(refvar.value)">
+  Display data from text box
+</button>
+<br />
+<h3>
+  Template reference variable eg3 the text from the input is displayed in
+  console
+</h3>
+<input #ref type="text" (keyup)="eventhandle(ref.value)" />
+<br />
